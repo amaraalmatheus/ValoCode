@@ -1,0 +1,30 @@
+# Dados da organização (não versionar)
+data/raw/
+data/processed/
+*.json
+!package.json
+!tsconfig.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Node (caso a interface use JS)
+node_modules/
+dist/
+build/
+
+# Relatórios gerados
+reports/*.pdf
+
+# Editores / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
