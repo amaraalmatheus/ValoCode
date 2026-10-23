@@ -603,7 +603,7 @@ header[data-testid="stHeader"] {
 # ============================================================
 
 BASE_DIR = Path(__file__).resolve().parents[1]
-PROCESSED_DIR = BASE_DIR / "data" / "processed"
+PROCESSED_DIR = BASE_DIR / "processed"
 
 
 # ============================================================
@@ -726,7 +726,7 @@ def load_data():
 
     if missing:
         raise FileNotFoundError(
-            "Arquivos ausentes em data/processed: "
+            "Arquivos ausentes em processed/: "
             + ", ".join(missing)
         )
 
@@ -779,7 +779,7 @@ if data_error:
     st.code(data_error)
     st.info(
         "Verifique se os arquivos CSV estão em "
-        "`data/processed` dentro do projeto."
+        "`processed/` dentro do projeto."
     )
     st.stop()
 
